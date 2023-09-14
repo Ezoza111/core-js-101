@@ -34,8 +34,8 @@ function concatenateStrings(value1, value2) {
  *   'b'     => 1
  *   ''      => 0
  */
-function getStringLength(/* value */) {
-  
+function getStringLength(value) {
+  return value.length
 }
 
 /**
@@ -52,7 +52,7 @@ function getStringLength(/* value */) {
  *   'Chuck','Norris'  => 'Hello, Chuck Norris!'
  */
 function getStringFromTemplate(/* firstName, lastName */) {
-  throw new Error('Not implemented');
+  return`Hello, ${firstName} ${lastName}`
 }
 
 /**
